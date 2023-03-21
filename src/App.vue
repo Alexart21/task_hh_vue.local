@@ -136,6 +136,10 @@ export default {
           // успешно
           console.log("form submitted");
           this.successText = `Спасибо, ${this.name} сообщение принято!`;
+        }else {
+          // console.log("фиг знает чё такое...");
+          this.errText = 'Непредвиденная ошибка...';
+          console.log(response);
         }
       }
       this.loader = false;
